@@ -17,18 +17,22 @@ This is the backend API for ShoppyGlobe e-commerce platform built with Node.js, 
 ### Products
 - `GET /products` - Get all products
 - `GET /products/:id` - Get single product by ID
+- `GET /products/add=product` - add the product or also i can implement admin Authentication later
 
 ### Cart (Requires Authentication)
-- `POST /cart` - Add product to cart
-- `PUT /cart/:id` - Update cart item quantity
-- `DELETE /cart/:id` - Remove item from cart
+- `POST /cart/add-cart` - Add product to cart
+- `PUT /cart/update/:id` - Update cart item quantity
+- `DELETE /cart/remove/:id` - Remove item from cart
 
 ## Setup
 
-1. Clone the repository
+1. Clone the repository 
+   link - https://github.com/Nitish15032000/shoppyglobe-backend.git
+2. ## Clone the repository for frontend with backend
+   link - https://github.com/Nitish15032000/shoppyglobe-application.git
 2. Install dependencies: `npm install`
-3. Create a `.env` file based on `.env.example`
+3. Create a `.env` file 
 4. Start the server: `npm start` (or `npm run dev` for development)
 
 ## Testing
-Use ThunderClient or Postman to test the API endpoints.
+Using ThunderClient to test the API endpoints.
